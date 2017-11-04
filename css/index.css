@@ -119,14 +119,12 @@
 .danpin{
 	width: 1226px;
 	height: 438px;
-	background-color: pink;
 	margin: 0 auto;
 	margin-top: 26px;
 }
 .danpin-top{
 	width: 100%;
 	height: 58px;
-	background-color: white;
 	line-height: 58px;
 	font-size: 22px;
 	font-weight: 200;
@@ -138,7 +136,6 @@
 .danpin-right{
 	width: 70px;
 	height: 25px;
-	background-color: pink;
 	float: right;
 	margin-top: 28px;
 }
@@ -168,7 +165,6 @@
 .danpin-img{
 	width: 160px;
 	height: 166px;
-	background-color: #fafafa;
 	margin: 0 auto;
 	display: block;/* 改变元素分类 */
 }
@@ -259,11 +255,13 @@
 .goods{
 	width: 100%;
 	background-color: #f5f5f5;
+	overflow: hidden;
 }
 .jiadian{
 	width: 1226px;
-	height: 686px;
+	/* height: 686px; */
 	margin: 0 auto;
+	margin-top: 33px;
 }
 .jiadian-top{
 	width: 1226px;
@@ -297,11 +295,13 @@
 }
 .jiadian-bottom{
 	width: 100%;
-	height: 628px;
+	height: 618px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-
+}
+.jiadian-bottom1{
+	height: 300px;
 }
 .jiadian-left{
 	width: 234px;
@@ -323,6 +323,11 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	position: relative;
+	overflow: hidden;/* 超出部分隐藏 */
+}
+.jiadian-item:hover .jiadian-item6{
+	bottom: 0px;
 }
 .jiadian-item1{
 	width: 64px;
@@ -388,10 +393,104 @@
 .jiadian-items3{
 	width: 80px;
 	height: 80px;
-	background-color: pink;
 	float: right;
 	margin-right: 20px;
 }
 .jiadian-items1:nth-child(2) .jiadian-item3{
 	font-size: 20px;
+}
+.items33{
+	background-color: white;
+}
+.items33 .iconfont{
+	font-size:50px;
+	color: orangered;
+}
+.zhineng-right{
+	width: 100%;
+}
+.jiadian-item .jiadian-item11{
+	background-color: orange;
+}
+.jiadian-item:nth-child(3) .jiadian-item1,.jiadian-item:nth-child(6) .jiadian-item .jiadian-item11{
+	background-color: orange;
+}
+.jiadian-item,.jiadian-items1,.jiadian-left,.jiadian-item6,.tuijian .danpin-contant{
+	transition: all .5s linear;/* 缓动效果 */
+}
+.jiadian-item:hover,.jiadian-items1:hover,.jiadian-left:hover,.tuijian .danpin-contant:hover{/* 群组选择器 */
+	box-shadow: 0px 10px 18px 5px rgba(0, 0, 0, 0.1);/* 阴影 */
+	transform: translateY(-5px);/* 水平移动 */
+}
+.jiadian-item6{
+	width: 100%;
+	height: 80px;
+	background-color: orangered;
+	position: absolute;
+	bottom: -80px;
+}
+.tuijian{
+	height: 378px;
+}
+.tuijian-bottom{
+	width: 100%;
+	height: 320px;
+}
+.tuijian .danpin-contant{
+	border: 0;
+	height: 280px;
+	background-color: #fff;
+}
+.video{
+	width: 1226px;
+	height: 343px;
+	margin: 0 auto;
+	margin-top: 22px;
+}
+.video-right{
+	width: 90px;
+	height: 100%;
+	float: right;
+}
+.video-right a{
+	font-size: 14px;
+	color: #333;
+}
+.video-bottom{
+	width: 100%;
+	height: 285px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.video-item{
+	width: 296px;
+	height: 100%;
+	background-color: white;
+}
+.video-item1{
+	width: 100%;
+	height: 180px;
+	position: relative;
+}
+.video-item1 .play{
+	position: absolute;
+	left: 20px;
+	bottom: 10px;
+	font-size: 30px;
+	color: white;
+}
+.video-item2{
+	font-size: 14px;
+	color: #424242;
+	display: block;
+	text-align: center;
+	margin-top: 28px;
+}
+.video-item3{
+	font-size: 14px;
+	color: #b0b0b0;
+	display: block;
+	text-align: center;
+	margin-top: 6px;
 }
